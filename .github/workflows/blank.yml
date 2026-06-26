@@ -8,5 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say Hello
-        run: echo "Hello GitHub Actions, Wei!"
+      - name: Show Date
+        run: date
+      - name: Show Folder
+        run: pwd
+      - name: List Files
+        run: ls
+      - name: Say Hi
+        run: echo "Hi Wei!"
