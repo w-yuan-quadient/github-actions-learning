@@ -12,7 +12,22 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
+
+      - name: Who Triggered
+        run: echo "${{ github.actor }}"
+
+      - name: Repository
+        run: echo "${{ github.repository }}"
+
+      - name: Branch
+        run: echo "${{ github.ref_name }}"
+
+      - name: Commit
+        run: echo "${{ github.sha }}"
+
+      - name: Workspace
+        run: echo "${{ github.workspace }}"
+              
       - run: pwd
       - run: ls -la
       - run: cat README.md
