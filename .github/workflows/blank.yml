@@ -14,3 +14,4 @@ jobs:
       - run: df -h
       - run: free -m
       - run: env
+      - run: cat README.md
