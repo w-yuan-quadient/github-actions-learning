@@ -9,16 +9,11 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       
-      - name: Current Folder
-        run: pwd
-
-      - name: List Files
-        run: ls
-      
-      - name: Show Files
-        run: ls -la
-      
-      - name: Read README.md
-        run: cat README.md
+      - run: pwd
+      - run: ls -la
+      - run: cat README.md
+      - run: git status
+      - run: git branch
+      - run: git log --oneline -5
