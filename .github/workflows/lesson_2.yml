@@ -24,13 +24,14 @@ jobs:
 
       - name: Commit
         run: echo "${{ github.sha }}"
-
+      
       - name: Workspace
         run: echo "${{ github.workspace }}"
-              
+
       - run: pwd
       - run: ls -la
       - run: cat README.md
       - run: git status
       - run: git branch
       - run: git log --oneline -5
+      - run: git rev-parse HEAD
