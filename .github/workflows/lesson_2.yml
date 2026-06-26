@@ -1,0 +1,24 @@
+name: Wei's Second Workflow
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      
+      - name: Current Folder
+        run: pwd
+
+      - name: List Files
+        run: ls
+      
+      - name: Show Files
+        run: ls -la
+      
+      - name: Read README.md
+        run: cat README.md
